@@ -7,6 +7,11 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 3000;
 
+// الصفحة الرئيسية لتأكيد تشغيل السيرفر ومنع ظهور كلمة Error
+app.get('/', (req, res) => {
+    res.send('<h1>🚀 سيرفر أتمتة مركز مرادي سبأ يعمل بنجاح وكفاءة على مدار 24 ساعة!</h1>');
+});
+
 console.log('🚀 تم تشغيل نظام وكلاء مرادي سبأ لإدارة الـ 24 ساعة...');
 
 app.post('/webhook/glamera', (req, res) => {
