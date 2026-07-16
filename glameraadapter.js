@@ -1,4 +1,4 @@
-3. glameraAdapter.js
+
 const axios = require('axios');
 
 const GLAMERA_MODE = process.env.GLAMERA_MODE || 'mock';
